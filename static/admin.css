@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    width: 100%;
+}
+.lang_cont {
+    width: 33%;
+    min-width: 400px;
+    min-height: 500px;
+    float: left;
+    color: cornflowerblue;
+    /*text-align: center;*/
+    border-right: 1px solid cornflowerblue;
+}
+
+#russian {
+
+}
+#english {
+
+}
+#french {
+    border: none
+}
+h2 {
+    width: 100%;
+    text-align: center;
+}
+h3 {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.input_wrap {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+label {
+    min-width: 140px;
+    text-align: left;
+}
+input, textarea {
+    width: 90%;
+}
+.save {
+    margin-top: 20px;
+}

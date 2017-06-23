@@ -1,0 +1,712 @@
+#containerCalc {
+    position: fixed;
+    right: 0;
+    top: 200px;
+    width: 50px;
+    z-index: 100;
+}
+#click {
+    width: 100%;
+    writing-mode: vertical-rl;
+    padding-right: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-width: 490px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+.intro-section {
+    /*height: 100%;*/
+    width: 100%;
+    /*min-height: 760px;*/
+    padding-top: 90px;
+    text-align: center;
+    background: #fff;
+}
+
+.about-section {
+    /*height: 100%;*/
+    min-height: 580px;
+    padding-top: 50px;
+    text-align: center;
+    background: #fff;
+}
+
+.sport-section {
+    /*height: 100%;*/
+    padding-top: 50px;
+    text-align: center;
+    background: #fff;
+}
+
+.volley-section {
+    /*height: 100%;*/
+    padding-top: 50px;
+    text-align: center;
+    background: #eee;
+}
+
+.fitness-section {
+    /*height: 100%;*/
+    padding-top: 50px;
+    text-align: center;
+    background: #eee;
+}
+
+.regby-section {
+    /*height: 100%;*/
+    padding-top: 50px;
+    text-align: center;
+    background: #fff;
+}
+
+.reviews-section {
+    /*height: 100%;*/
+    /* margin-top: 50px;*/
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section {
+    /*height: 100%;*/
+    padding-top: 50px;
+    text-align: center;
+    background: #fff;
+}
+
+/** Navigation **/
+.btn-danger{
+    color: #ffffff;
+    background-color: #f42257;
+    border-color: #f42257;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
+    color: #ffffff;
+    background-color: #e20b41;
+    border-color: #cf0a3c;
+}
+.navbar-default {
+    background-color: rgb(51, 51, 50);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #b3b3b1;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    background: #00b4ff;
+    color: #fff;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
+    background: #00b4ff;
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:focus{
+    background-color: rgb(51, 51, 50);
+    color: #b3b3b1;
+}
+.navbar-default .navbar-nav>.active>a {
+    background: #00b4ff;
+    color: #fff;
+}
+
+.navbar .container {
+    width: 100%;
+}
+ul.nav {
+    width: 100%;
+    min-width: 1071px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+ul.nav > li {
+    min-width: 75px;
+}
+@media(max-width:1096px) {
+    ul.nav {
+        width: auto;
+        display: block;
+        text-align: left;
+    }
+}
+/*
+#select_lang {
+    position: fixed;
+    right: 10px;
+    left: auto;
+    top: 12px;
+    height: 24px;
+    color:white;
+    background-color: rgb(51, 51, 50);
+}
+@media(max-width:767px) {
+    #select_lang {
+        display: block;
+        left: 10px;
+        right: auto;
+    }
+}*/
+
+/** Video styles**/
+header {
+    display: none;
+}
+.fullscreen-bg {
+    width: 100%;
+    height: auto;
+}
+video {
+    min-width: 400px;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+}
+.overlay {
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top:90px;
+    left:0;
+    width: 100%;
+    z-index: 4;
+    color: white;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+}
+.overlay>h1 {
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+}
+#title {
+    margin-top: 8%;
+}
+#subtitle {
+    font-size: 32px;
+}
+
+@media(max-width:890px) {
+    .overlay>h1 {
+        font-size: 32px;
+    }
+    #subtitle {
+        font-size: 28px;
+    }
+}
+@media(max-width:700px) {
+    .overlay>h1 {
+        font-size: 24px;
+    }
+    #subtitle {
+        font-size: 18px;
+    }
+}
+@media(max-width:1100px) {
+    #title {
+        margin-top: 15%;
+    }
+}
+
+    /** About us section **/
+.features
+{
+    padding-top: 3.3em;
+    padding-bottom: 4.2em;
+}
+.text {
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 2.028571429;
+    color: #555555;
+}
+
+h4 {
+    font-size: 26px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 1.1em;
+    font-weight: 500;
+    color: #555555;
+}
+.icon {
+    font-size: 50px;
+}
+
+/** Sport section **/
+.container-fluid {
+    background: linear-gradient( rgba(33, 37, 43, 0.2), rgba(33, 37, 43, 0.2) ), url(http://volley4fun.com/v0v4ik/static/images/sport.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.opaline {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: rgba(128, 215, 247, 0.660);
+    text-align: left;
+    color: white;
+}
+.info p {
+    font-size: 18px;
+}
+.hidden {
+    display: none;
+}
+.info {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 2.028571429;
+}
+.event_day {
+    width: 380px;
+    padding-left: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    margin-left: 20px;
+    color: #fff;
+    background-color: dodgerblue;
+}
+.contact_btn {
+    width: 220px;
+    /*margin-left: 20px;*/
+    font-family: 'Roboto Slab', serif;
+    margin-right: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    color: #fff;
+    background-color: #f42257;
+    /*color:white;
+    background-color: dodgerblue;*/
+}
+.accommodation_btn {
+    width: 360px;
+    margin-left: 40px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    color:white;
+    background-color: dodgerblue;
+}
+/** Volley section **/
+div#rotator {
+    min-width: 500px;
+    height:313px;
+    margin-bottom: 44px;
+    margin-top: 12px;
+}
+div#rotator ul li {
+    float:left;
+    position:absolute;
+    list-style: none;
+    margin-left: -40px;
+}
+div#rotator ul li.show {
+    z-index:75;
+}
+#amazingslider-wrapper-1 {
+    margin: 0px 44px;
+}
+h2 {
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 1.1em;
+    margin-top: 22px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #555555;
+}
+
+.cont {
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 2.028571429;
+    color: #555555;
+    padding-top: 30px;
+    width:50%;
+    float: left;
+    min-width: 450px;
+}
+@media(max-width:1200px) {
+    .cont {
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .cont h4 {
+        display: none;
+    }
+}
+
+/** Fitness section **/
+.fitness-section .container-fluid{
+    /*background: linear-gradient( rgba(33, 37, 43, 0.2), rgba(33, 37, 43, 0.6) ), url(http://volley4fun.com/v0v4ik/static/images/S2mjuMup3po.jpg);*/
+    background: linear-gradient( rgba(33, 37, 43, 0.1), rgba(33, 37, 43, 0.2) ), url(http://volley4fun.com/v0v4ik/static/images/fonfitness2.jpg);
+    /*background: linear-gradient( rgba(33, 37, 43, 0.2), rgba(33, 37, 43, 0.6) ), url(http://volley4fun.com/v0v4ik/static/images/fonfitness1.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/** Regby **/
+div#rotator2 {
+    min-width: 500px;
+    height:313px;
+    margin-bottom: 44px;
+    margin-top: 12px;
+}
+div#rotator2 ul li {
+    float:left;
+    position:absolute;
+    list-style: none;
+}
+div#rotator2 ul li.show {
+    z-index:75;
+}
+.regby_cont {
+    display: block;
+    width:35%
+}
+@media(max-width:1200px) {
+    .regby_cont {
+        width: 100%;
+    }
+}
+.regby_video_cont {
+    width:690px;
+}
+@media(max-width:1200px) {
+    .regby_video_cont {
+        width: 100%;
+    }
+}
+
+/** Children section **/
+.children-section .container-fluid{
+    background: linear-gradient( rgba(33, 37, 43, 0.1), rgba(33, 37, 43, 0.2) ), url(http://volley4fun.com/v0v4ik/static/images/children2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/** Reviews section**/
+.reviews-section {
+    /*background-color: #f3941a;*/
+    background-color: #555;
+}
+.review {
+    width: 50%;
+    float: left;
+    min-width: 265px;
+    margin: 0 0 50px 0;
+}
+.commentator {
+    width: 33%;
+    min-width: 60px;
+    margin: 0 /*10px*/;
+    float: left;
+}
+.comment_photo {
+    width: 60px;
+    height: 60px;
+    background-position: center center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.comment_name {
+    width: 60px;
+    margin: 0 auto;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.4;
+    color: white;
+    text-align: center;
+}
+.review_text {
+    width: 60%;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 15px;
+    float: left;
+    line-height: 1.8;
+}
+.review_cont {
+    padding-top: 0;
+}
+
+.reviewer1 {
+    /*background: url("http://volley4fun.com/v0v4ik/static/images/reviewer_photo_1.jpg");*/
+    background: url("http://volley4fun.com/v0v4ik/static/images/reviewer_photo_1.jpg");
+    background-size: cover;
+}
+.reviewer2 {
+    background: url("http://volley4fun.com/v0v4ik/static/images/review2.jpg");
+    background-size: cover;
+}
+.reviewer3 {
+    background: url("http://volley4fun.com/v0v4ik/static/images/review3.jpg");
+    background-size: cover;
+}
+.reviewer4 {
+    background: url("http://volley4fun.com/v0v4ik/static/images/reviewer_photo_4.png");
+    background-size: cover;
+}
+@media(max-width:1201px) {
+    .review {
+        margin-top: 0;
+    }
+}
+@media(max-width:720px) {
+    .review {
+        width: 100%;
+    }
+    .review_cont {
+        display: block;
+        padding-top: 0;
+    }
+}
+
+/** Blog section **/
+.infograph {
+    width: 100%;
+    height: 200px;
+}
+.info_photo_wrap {
+    float: left;
+    width: 200px;
+}
+.info_photo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.info_text {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    float: left;
+    height: 200px;
+    width: 306px;
+}
+
+/** Contact section **/
+.social_networks{
+    margin: 10px 0;
+}
+.social_networks>a {
+    margin-top: 20px;
+    margin-right: 5%;
+    font-size: 50px;
+    color: rgba(128, 215, 247, 0.660);
+}
+.social_networks>a:hover {
+    color: #00b4ff;
+}
+
+.contact-section .container-fluid {
+    background: linear-gradient( rgba(33, 37, 43, 0.6), rgba(33, 37, 43, 0.6) ), url(http://volley4fun.com/v0v4ik/static/images/Beach_Volley_Marathon_02.jpg);
+    background-position: top;
+}
+h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 34px;
+}
+
+footer {
+    background-color: rgb(51, 51, 50);
+    color: #b3b3b1;
+}
+#map {
+    height: 380px;
+    width: 100%;
+    margin-top: 120px;
+}
+@media(max-width:1100px) {
+    #map {
+        margin-top: 20px;
+    }
+}
+
+/** Timer hide **/
+@media(max-width:1100px) {
+    #bodyCountdown {
+        display: none;
+    }
+    #subtitle {
+        display: none;
+    }
+}
+
+/** Modal form for 'contact us' **/
+
+.field-wrap {
+    margin: 20px auto;
+    width: 80%;
+}
+.field-wrap>label {
+    width: 100%;
+}
+.field-wrap>input {
+    width: 100%;
+}
+.field-wrap>textarea {
+    width: 100%;
+}
+#submit_contact_form {
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+
+#slider-wrap, #slider-wrap2, #slider-wrap3, #slider-wrap4 { /* Оболочка слайдера и кнопок */
+    width:580px;
+}
+#slider, #slider2, #slider3, #slider4{ /* Оболочка слайдера */
+    width:560px;
+    height:360px;
+    overflow: hidden;
+    border:#eee solid 5px;
+    position:relative;}
+.slide, .slide2, .slide3, .slide4{ /* Слайд */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    width:100%;
+    height:100%;
+}
+.slide>img, .slide2>img, .slide3>img, .slide4>img {
+    width: 100%;
+    height: 100%;
+}
+.sli-links{ /* Кнопки смены слайдов */
+    margin-top:10px;
+    text-align:center;}
+.sli-links .control-slide{
+    margin:2px;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    text-indent:-9999px;
+    background:url(http://volley4fun.com/v0v4ik/static/images/radioBg.png) center bottom no-repeat;}
+.sli-links .control-slide:hover{
+    cursor:pointer;
+    background-position:center center;}
+.sli-links .control-slide.active{
+    background-position:center top;}
+#prewbutton, #nextbutton, #prewbutton2, #nextbutton2, #prewbutton3, #nextbutton3, #prewbutton4, #nextbutton4{ /* Ссылка "Следующий" и "Педыдущий" */
+    display:block;
+    width:15px;
+    height:100%;
+    position:absolute;
+    top:0;
+    overflow:hidden;
+    text-indent:-999px;
+    background:url(http://volley4fun.com/v0v4ik/static/images/arrowBg.png) left center no-repeat;
+    opacity:0.8;
+    z-index:3;
+    outline:none !important;}
+#prewbutton, #prewbutton2, #prewbutton3, #prewbutton4 {left:10px;}
+#nextbutton, #nextbutton2, #nextbutton3, #nextbutton4{
+    right:10px;
+    background:url(http://volley4fun.com/v0v4ik/static/images/arrowBg.png) right center no-repeat;}
+#prewbutton:hover, #nextbutton:hover{
+    opacity:1;}
+#prewbutton2:hover, #nextbutton2:hover{
+    opacity:1;}
+#prewbutton3:hover, #nextbutton3:hover{
+    opacity:1;}
+#prewbutton4:hover, #nextbutton4:hover{
+    opacity:1;}
+
+
+
+
+.jssorb01 {
+    position: absolute;
+}
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 12px;
+    height: 12px;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    overflow: hidden;
+    cursor: pointer;
+    border: #000 1px solid;
+}
+.jssorb01 div { background-color: gray; }
+.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+.jssorb01 .av { background-color: #fff; }
+.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+/* jssor slider arrow navigator skin 02 css */
+/*
+.jssora02l                  (normal)
+.jssora02r                  (normal)
+.jssora02l:hover            (normal mouseover)
+.jssora02r:hover            (normal mouseover)
+.jssora02l.jssora02ldn      (mousedown)
+.jssora02r.jssora02rdn      (mousedown)
+*/
+.jssora02l, .jssora02r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: url(http://volley4fun.com/v0v4ik/static/images/a02.png) no-repeat;
+    overflow: hidden;
+}
+.jssora02l { background-position: -3px -33px; }
+.jssora02r { background-position: -63px -33px; }
+.jssora02l:hover { background-position: -123px -33px; }
+.jssora02r:hover { background-position: -183px -33px; }
+.jssora02l.jssora02ldn { background-position: -3px -33px; }
+.jssora02r.jssora02rdn { background-position: -63px -33px; }

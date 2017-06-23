@@ -1,0 +1,53 @@
+<?php
+	session_start();
+	$url_raw = basename(htmlspecialchars($_SESSION['url']));
+	if($url_raw == 'volley4fun.com'){
+		$url = '/';
+	}else if($url_raw == 'index.html'){
+		$url = 'index.html';
+	}else if($url_raw == 'indexRU.html'){
+		$url = 'indexRU.html';
+	}
+	if($url == 'index.html'){
+		$lang = 'fr';
+		$title = 'Votre information a bien été envoyé. BVM Beach Volley Camp';
+		$text = 'Votre information a bien été envoyé';
+		$back = 'Retour';
+	}else if($url == '/'){
+		$lang = 'fr';
+		$title = 'Votre information a bien été envoyé. BVM Beach Volley Camp';
+		$text = 'Votre information a bien été envoyé';
+		$back = 'Retour';
+	}else if($url == 'indexRU.html'){
+		$lang = 'ru';
+		$title = 'Информация успешно отправлена. BVM Beach Volley Camp';
+		$text = 'Информация успешно отправлена';
+		$back = 'Назад';
+	}
+?>
+<!DOCTYPE html>
+
+<html lang="<?php echo $lang ?>">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="<?php echo $title ?>" />
+	<title><?php echo $title ?></title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="form/css/sent.css" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300,700,900,500' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="sent">
+<div class="all">
+<div class="box">
+<div class="content">
+
+<p><?php echo $text ?></p>
+<p><a href="<?php echo $url ?>"><?php echo $back ?></a></p>
+
+</div>
+</div>
+</div>
+</body>
+</html>

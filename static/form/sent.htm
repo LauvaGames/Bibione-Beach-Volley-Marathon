@@ -1,0 +1,41 @@
+<?php
+	session_start();
+	$url = basename(htmlspecialchars($_SESSION['url']));
+	if($url == 'formFR.html'){
+		$lang = 'fr';
+		$title = 'Votre message a bien été envoyé. BVM Beach Volley Camp';
+		$text = 'Votre message a bien été envoyé';
+		$back = 'Retour';
+	}else if($url == 'formRU.html'){
+		$lang = 'ru';
+		$title = 'Сообщение успешно отправлено. BVM Beach Volley Camp';
+		$text = 'Сообщение успешно отправлено';
+		$back = 'Назад';
+	}
+?>
+<!DOCTYPE html>
+
+<html lang="<?php echo $lang ?>">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="<?php echo $title ?>" />
+	<title><?php echo $title ?></title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/css.css" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300,700,900,500' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="sent">
+<div class="all">
+<div class="box">
+<div class="content">
+
+<p><?php echo $text ?></p>
+<p><a href="<?php echo $url ?>" class="readmorelinks"><?php echo $back ?></a></p>
+
+</div>
+</div>
+</div>
+</body>
+</html>

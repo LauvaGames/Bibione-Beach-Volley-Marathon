@@ -1,0 +1,11 @@
+html{height: auto; padding: 0px; margin: 0px;}
+body{padding: 0px; margin: 0px; height: auto; width: 100%; float: left; background: #eee; font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 2.028571429; color: #555;}
+
+.all{position: relative; top: 0px; left: 0px; height: auto; width: 100%; float: left; clear: both; padding: 0px; margin: 0px; text-align: center;}
+.box{position: relative; top: 0px; left: 0px; height: auto; max-width: 942px; padding: 0px; margin: 0 auto 0; float: none;}
+.content{position: relative; top: 0px; left: 0px; height: auto; max-width: 800px; padding: 50px; margin: 20px; float: none; display: inline-block; vertical-align: top; border: 1px #ccc solid; background: #fff;}
+
+.sent p{position: relative; top: 0px; left: 0px; height: auto; width: 100%; padding: 0px; margin: 0px; float: left; text-align: center; font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 2.028571429; color: #555;}
+.sent p a{color: #f42257; text-decoration: none;}
+.sent p a:hover{color: #e20b41;}
+.sent p a:active{color: #00f;}
