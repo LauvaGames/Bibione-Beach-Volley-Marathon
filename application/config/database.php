@@ -75,11 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'trorspbgma',
-	'password' => '3cd3c914',
-	'database' => 'trorspbgma',
-	'dbdriver' => 'mysqli',
+	'hostname' => '',
+	'username' => '',
+	'password' => '',
+	'database' => '',
+	'dbdriver' => '',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
